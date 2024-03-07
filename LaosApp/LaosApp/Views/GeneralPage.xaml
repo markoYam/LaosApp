@@ -11,20 +11,20 @@
 
     <ScrollView>
         <VerticalStackLayout Spacing="5">
-           
+            <Label Text="Fonts" FontSize="30" TextColor="Green" HorizontalOptions="Center"/>
             <Label 
-        Text="Syne ExtraBoald"
-        VerticalOptions="Center" 
-        HorizontalOptions="Center" 
-        FontFamily="SyneExtra" 
-        FontSize="25" 
-        TextColor="Black"/>
+                Text="Syne ExtraBoald"
+                VerticalOptions="Center" 
+                HorizontalOptions="Center" 
+                FontFamily="SyneExtra" 
+                FontSize="25" 
+                TextColor="Black"/>
             <Label 
-        Text="Sanchez"
-        VerticalOptions="Center" 
-        HorizontalOptions="Center" 
-        FontFamily="Sanchez" 
-        TextColor="{StaticResource RedBlack}" 
+                Text="Sanchez"
+                VerticalOptions="Center" 
+                HorizontalOptions="Center" 
+                FontFamily="Sanchez" 
+                TextColor="{StaticResource ColorLaosRed}" 
         FontSize="20"/>
             <Label Text="Buttons" FontSize="30" TextColor="Green" HorizontalOptions="Center"/>
             <md:Button Style="{DynamicResource ElevatedButtonStyle}" Text="Elevated" BackgroundColor="{StaticResource ColorLaosRed}"/>
@@ -39,7 +39,7 @@
             <md:IconButton IconData="{Static icon:Material.Star}" Style="{DynamicResource OutlinedIconButtonStyle}" />
             <md:IconButton IconData="{Static icon:Material.Star}" Style="{DynamicResource StandardIconButtonStyle}" />
 
-            <Label Text="Cards"/>
+            <Label Text="Cards" FontSize="30" TextColor="Green" HorizontalOptions="Center"/>
             <md:Card Style="{DynamicResource FilledCardStyle}" Elevation="Level3" Shape="5">
                 
                 
@@ -85,6 +85,35 @@
                 </md:Card.Content>
             </md:Card>
 
+            <Label Text="ComboBox" FontSize="30" TextColor="Green" HorizontalOptions="Center"/>
+            <md:ComboBox Style="{DynamicResource FilledComboBoxStyle}" BackgroundColor="{StaticResource ColorLaosRed}">
+                <md:MenuItem Text="item 1" />
+                <md:MenuItem Text="item 2" />
+            </md:ComboBox>
+            <md:ComboBox Style="{DynamicResource OutlinedComboBoxStyle}">
+                <md:MenuItem Text="item 1" />
+                <md:MenuItem Text="item 2" />
+            </md:ComboBox>
+
+            <Label Text="Switchs" FontSize="30" TextColor="Green" HorizontalOptions="Center"/>
+            <md:Switch BackgroundColor="{StaticResource ColorLaosRed}"/>
+            <md:Switch IsSelected="True" BackgroundColor="{StaticResource ColorLaosRed}"/>
+            <md:Switch IsSelected="True" Style="{DynamicResource MarkSwitchStyle}" />
+
+
+            <Label Text="TextFields" FontSize="30" TextColor="Green" HorizontalOptions="Center"/>
+            <md:TextField
+                ActiveIndicatorColor = "{StaticResource ColorLaosRed}"
+                IconData="{Static icon:Material.Search}"
+                Style="{DynamicResource FilledTextFieldStyle}"
+                WidthRequest="250" />
+
+            <md:TextField
+                IconData="{Static icon:Material.Password}"
+                Style="{DynamicResource OutlinedTextFieldStyle}"
+                SupportingText="Incorrect password"
+                TrailingIconData="{Static icon:Material.Close}"
+                WidthRequest="300" />
 
         </VerticalStackLayout>
     </ScrollView>
