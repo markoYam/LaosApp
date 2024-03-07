@@ -2,72 +2,91 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="LaosApp.Views.GeneralPage"
+             xmlns:md="clr-namespace:Material.Components.Maui;assembly=Material.Components.Maui"
+             xmlns:icon="clr-namespace:IconPacks.IconKind;assembly=IconPacks.Material"
              Title="GeneralPage" 
+             BackgroundColor="White"
              xmlns:models="clr-namespace:LaosApp.Models">
+
+
+    <ScrollView>
+        <VerticalStackLayout Spacing="5">
+           
+            <Label 
+        Text="Syne ExtraBoald"
+        VerticalOptions="Center" 
+        HorizontalOptions="Center" 
+        FontFamily="SyneExtra" 
+        FontSize="25" 
+        TextColor="Black"/>
+            <Label 
+        Text="Sanchez"
+        VerticalOptions="Center" 
+        HorizontalOptions="Center" 
+        FontFamily="Sanchez" 
+        TextColor="{StaticResource RedBlack}" 
+        FontSize="20"/>
+            <Label Text="Buttons" FontSize="30" TextColor="Green" HorizontalOptions="Center"/>
+            <md:Button Style="{DynamicResource ElevatedButtonStyle}" Text="Elevated" BackgroundColor="{StaticResource ColorLaosRed}"/>
+            <md:Button Style="{DynamicResource FilledButtonStyle}" Text="Filled" />
+            <md:Button Style="{DynamicResource FilledTonalButtonStyle}" Text="FilledTonal" />
+            <md:Button Style="{DynamicResource OutlinedButtonStyle}" Text="Outlined" />
+            <md:Button Style="{StaticResource TextButtonStyle}" Text="Text" />
+
+            <Label Text="Icons" FontSize="30" TextColor="Green" HorizontalOptions="Center"/>
+            <md:IconButton IconData="{Static icon:Material.Star}" Style="{DynamicResource FilledIconButtonStyle}" />
+            <md:IconButton IconData="{Static icon:Material.Star}" Style="{DynamicResource FilledTonalIconButtonStyle}" />
+            <md:IconButton IconData="{Static icon:Material.Star}" Style="{DynamicResource OutlinedIconButtonStyle}" />
+            <md:IconButton IconData="{Static icon:Material.Star}" Style="{DynamicResource StandardIconButtonStyle}" />
+
+            <Label Text="Cards"/>
+            <md:Card Style="{DynamicResource FilledCardStyle}" Elevation="Level3" Shape="5">
+                
+                
+                <md:Card.Content>
+
+                    <VerticalStackLayout>
+                        <Label Text="Filled Card" />
+                        <!--Actions-->
+                        <HorizontalStackLayout>
+                            <md:Button Style="{DynamicResource TextButtonStyle}" Text="Filled" />
+                            <md:Button Style="{DynamicResource TextButtonStyle}" Text="Filled" />
+                        </HorizontalStackLayout>
+                       
+                    </VerticalStackLayout>
+                   
+                </md:Card.Content>
+            </md:Card>
+            <md:Card Style="{DynamicResource ElevatedCardStyle}">
+                
+                <md:Card.Content>
+                    <VerticalStackLayout>
+                        <Label Text="Elevated Card" />
+                        <!--Actions-->
+                        <HorizontalStackLayout>
+                            <md:Button Style="{DynamicResource TextButtonStyle}" Text="Filled" />
+                            <md:Button Style="{DynamicResource TextButtonStyle}" Text="Filled" />
+                        </HorizontalStackLayout>
+
+                    </VerticalStackLayout>
+                </md:Card.Content>
+                
+            </md:Card>
+            <md:Card Style="{DynamicResource OutlinedCardStyle}">
+                <md:Card.Content>
+                    <VerticalStackLayout>
+                        <Label Text="Outlined Card" />
+                        <!--Actions-->
+                        <HorizontalStackLayout>
+                            <md:Button Style="{DynamicResource TextButtonStyle}" Text="Filled" />
+                            <md:Button Style="{DynamicResource TextButtonStyle}" Text="Filled" />
+                        </HorizontalStackLayout>
+                    </VerticalStackLayout>
+                </md:Card.Content>
+            </md:Card>
+
+
+        </VerticalStackLayout>
+    </ScrollView>
     
-    
-    
-    <VerticalStackLayout>
-        <Label 
-            Text="Syne ExtraBoald"
-            VerticalOptions="Center" 
-            HorizontalOptions="Center" 
-            FontFamily="SyneExtra" 
-            FontSize="25" 
-            TextColor="Black"/>
-        <Label 
-            Text="Sanchez"
-            VerticalOptions="Center" 
-            HorizontalOptions="Center" 
-            FontFamily="Sanchez" 
-            TextColor="{StaticResource RedBlack}" 
-            FontSize="20"/>
-
-        <HorizontalStackLayout HorizontalOptions="Center">
-            <Label FontFamily="Icons" Text="{x:Static models:Icons.t}" TextColor="{StaticResource RedBlack}" WidthRequest="100" HeightRequest="100"></Label>
-            <Label FontFamily="Icons" Text="{x:Static models:Icons.Upload}" TextColor="{StaticResource RedBlack}" WidthRequest="100" HeightRequest="100"></Label>
-            <Label FontFamily="Icons" Text="{x:Static models:Icons.Add_a_photo}" TextColor="{StaticResource RedBlack}" WidthRequest="100" HeightRequest="100"></Label>
-        </HorizontalStackLayout>
-
-        
-
-        <Entry Placeholder="Nombre: "/>
-        <Entry Placeholder="Contraseña:"/>
-
-        <Button Text="Editar" 
-                BackgroundColor="{StaticResource RedBlack}" 
-                TextColor="White" 
-                x:Name="btn1" 
-                Clicked="btn1_Clicked" 
-                BorderColor="Black" CornerRadius="20"/>
-        
-        <Button Text="Eliminar" 
-                BackgroundColor="White" 
-                TextColor="{StaticResource RedBlack}" 
-                x:Name="btn2" 
-                Clicked="btn2_Clicked"
-                BorderColor="Black" 
-                CornerRadius="20"/>
-
-        <Button Text="Agregar"
-                CornerRadius="20" 
-                BackgroundColor="{StaticResource RedBlack}" 
-                TextColor="White"
-                />
-
-        <Border  
-                Stroke="pink"
-                Background="Black"
-                StrokeThickness="10"
-                Padding="30,20"
-                HorizontalOptions="Center">
-            <Border.StrokeShape>
-                <RoundRectangle CornerRadius="0,45,0,0"/>
-            </Border.StrokeShape>
-            <Label TextColor="White"
-                Text="Welcome to.NET MAUI"                
-                FontSize="15"
-                FontAttributes="Bold" />
-        </Border>
-    </VerticalStackLayout>
 </ContentPage>

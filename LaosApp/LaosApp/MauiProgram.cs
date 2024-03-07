@@ -1,4 +1,6 @@
-﻿using Microsoft.Extensions.Logging;
+﻿using CommunityToolkit.Maui;
+using Microsoft.Extensions.Logging;
+using Material.Components.Maui.Extensions;
 
 namespace LaosApp
 {
@@ -9,6 +11,8 @@ namespace LaosApp
             var builder = MauiApp.CreateBuilder();
             builder
                 .UseMauiApp<App>()
+                .UseMauiCommunityToolkit()
+                .UseMaterialComponents()
                 .ConfigureFonts(fonts =>
                 {
                     fonts.AddFont("OpenSans-Regular.ttf", "OpenSansRegular");
@@ -25,5 +29,7 @@ namespace LaosApp
 
             return builder.Build();
         }
+
+
     }
 }
