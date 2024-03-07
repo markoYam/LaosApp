@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="LaosApp.Views.GeneralPage"
+             Title="GeneralPage" 
+             xmlns:models="clr-namespace:LaosApp.Models">
+    
+    
+    
+    <VerticalStackLayout>
+        <Label 
+            Text="Syne ExtraBoald"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center" 
+            FontFamily="SyneExtra" 
+            FontSize="25" 
+            TextColor="Black"/>
+        <Label 
+            Text="Sanchez"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center" 
+            FontFamily="Sanchez" 
+            TextColor="{StaticResource RedBlack}" 
+            FontSize="20"/>
+
+        <HorizontalStackLayout HorizontalOptions="Center">
+            <Label FontFamily="Icons" Text="{x:Static models:Icons.t}" TextColor="{StaticResource RedBlack}" WidthRequest="100" HeightRequest="100"></Label>
+            <Label FontFamily="Icons" Text="{x:Static models:Icons.Upload}" TextColor="{StaticResource RedBlack}" WidthRequest="100" HeightRequest="100"></Label>
+            <Label FontFamily="Icons" Text="{x:Static models:Icons.Add_a_photo}" TextColor="{StaticResource RedBlack}" WidthRequest="100" HeightRequest="100"></Label>
+        </HorizontalStackLayout>
+
+        
+
+        <Entry Placeholder="Nombre: "/>
+        <Entry Placeholder="Contraseña:"/>
+
+        <Button Text="Editar" 
+                BackgroundColor="{StaticResource RedBlack}" 
+                TextColor="White" 
+                x:Name="btn1" 
+                Clicked="btn1_Clicked" 
+                BorderColor="Black" CornerRadius="20"/>
+        
+        <Button Text="Eliminar" 
+                BackgroundColor="White" 
+                TextColor="{StaticResource RedBlack}" 
+                x:Name="btn2" 
+                Clicked="btn2_Clicked"
+                BorderColor="Black" 
+                CornerRadius="20"/>
+
+        <Button Text="Agregar"
+                CornerRadius="20" 
+                BackgroundColor="{StaticResource RedBlack}" 
+                TextColor="White"
+                />
+
+        <Border  
+                Stroke="pink"
+                Background="Black"
+                StrokeThickness="10"
+                Padding="30,20"
+                HorizontalOptions="Center">
+            <Border.StrokeShape>
+                <RoundRectangle CornerRadius="0,45,0,0"/>
+            </Border.StrokeShape>
+            <Label TextColor="White"
+                Text="Welcome to.NET MAUI"                
+                FontSize="15"
+                FontAttributes="Bold" />
+        </Border>
+    </VerticalStackLayout>
+</ContentPage>

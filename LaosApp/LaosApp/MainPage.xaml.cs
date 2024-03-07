@@ -1,8 +1,10 @@
-﻿namespace LaosApp
+﻿using LaosApp.Views;
+
+namespace LaosApp
 {
     public partial class MainPage : ContentPage
     {
-        int count = 0;
+        
 
         public MainPage()
         {
@@ -11,14 +13,7 @@
 
         private void OnCounterClicked(object sender, EventArgs e)
         {
-            count++;
-
-            if (count == 1)
-                CounterBtn.Text = $"Clicked {count} time";
-            else
-                CounterBtn.Text = $"Clicked {count} times";
-
-            SemanticScreenReader.Announce(CounterBtn.Text);
+            Navigation.PushAsync(new GeneralPage());
         }
     }
 
