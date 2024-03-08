@@ -10,6 +10,7 @@ namespace LaosApp.Presenters
     class LoginPresenter : ILoginPresenter
     {
         private readonly ILoginDataService _loginDataService;
+        private readonly ILoginView _loginView;
 
        
 
