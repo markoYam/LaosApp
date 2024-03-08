@@ -114,8 +114,15 @@
                 SupportingText="Incorrect password"
                 TrailingIconData="{Static icon:Material.Close}"
                 WidthRequest="300" />
-
+            <Label Text="Buttons redirec to pages" FontSize="30" TextColor="Green" HorizontalOptions="Center"/>
+            <md:Button Style="{DynamicResource ElevatedButtonStyle}" Text="Go to Login" BackgroundColor="{StaticResource ColorLaosRed}" x:Name="login" Clicked="login_Clicked"/>
+            <md:Button Style="{DynamicResource ElevatedButtonStyle}" Text="Go to Register" BackgroundColor="{StaticResource ColorLaosRed}" x:Name="register" Clicked="register_Clicked"/>
+            <md:Button Style="{DynamicResource ElevatedButtonStyle}" Text="Go to Order" BackgroundColor="{StaticResource ColorLaosRed}" x:Name="order" Clicked="order_Clicked"/>
+            <md:Button Style="{DynamicResource ElevatedButtonStyle}" Text="Go to Products" BackgroundColor="{StaticResource ColorLaosRed}" x:Name="products" Clicked="products_Clicked"/>
+            
         </VerticalStackLayout>
+
+        
     </ScrollView>
     
 </ContentPage>

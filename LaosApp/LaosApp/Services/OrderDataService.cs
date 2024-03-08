@@ -8,12 +8,13 @@ using System.Threading.Tasks;
 
 namespace LaosApp.Services
 {
-    internal class RegisterDataService : IRegisterDataService
+    internal class OrderDataService : IOrdersDataService
     {
+
         private readonly IHttpClientService _httpClientService;
         private readonly DatabaseContextService _databaseContextService;
 
-        public RegisterDataService(IHttpClientService httpClientService, DatabaseContextService databaseContextService)
+        public OrderDataService(IHttpClientService httpClientService, DatabaseContextService databaseContextService)
         {
             _httpClientService = httpClientService;
             _databaseContextService = databaseContextService;
