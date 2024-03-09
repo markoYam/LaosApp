@@ -36,11 +36,11 @@ namespace LaosApp.Controls
                 return;
             }
 
-            var paddingControl = control as UITextFieldPadding;
-            paddingControl.Layer.CornerRadius = entry.CornerRadius;
-            paddingControl.Layer.BorderColor = entry.BorderColor.ToCGColor();
-            paddingControl.Layer.BorderWidth = entry.BorderThickness;
-            paddingControl.Padding = entry.Padding;
+            control.Layer.CornerRadius = entry.CornerRadius;
+            control.Layer.BorderColor = entry.BorderColor.ToCGColor();
+            control.Layer.BorderWidth = entry.BorderThickness;
+            control.BorderStyle = UITextBorderStyle.Line;
+            //control.Padding = entry.Padding;
 
         }
     }
