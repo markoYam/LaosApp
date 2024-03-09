@@ -15,10 +15,17 @@ namespace LaosApp.Controls
             if (view is CustomMaterialOutilineEntry viewData)
             {
                 var entryHandler = (EntryHandler)handler;
-                
-                var control = new UITextFieldPadding();
-                control.Layer.CornerRadius = viewData.CornerRadius;
+
                 UpdateBackground(entryHandler.PlatformView, viewData);
+
+                var padddingViewLeft = new UIView(new CoreGraphics.CGRect(0, 0, viewData.Padding.Left, 0));
+                var padddingViewRight = new UIView(new CoreGraphics.CGRect(0, 0, viewData.Padding.Right, 0));
+                
+                entryHandler.PlatformView.LeftView = padddingViewLeft;
+                entryHandler.PlatformView.LeftViewMode = UITextFieldViewMode.Always;
+
+                entryHandler.PlatformView.RightView = padddingViewRight;
+                entryHandler.PlatformView.RightViewMode = UITextFieldViewMode.Always;
             }
         }
 
