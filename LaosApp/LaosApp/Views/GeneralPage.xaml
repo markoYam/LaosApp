@@ -121,7 +121,7 @@
             <md:Button Style="{DynamicResource ElevatedButtonStyle}" Text="Go to Order" BackgroundColor="{StaticResource ColorLaosRed}" x:Name="order" Clicked="order_Clicked"/>
             <md:Button Style="{DynamicResource ElevatedButtonStyle}" Text="Go to Products" BackgroundColor="{StaticResource ColorLaosRed}" x:Name="products" Clicked="products_Clicked"/>
 
-            <local:CustomMaterialOutilineEntry Padding="10" Placeholder="Test"></local:CustomMaterialOutilineEntry>
+            <local:CustomMaterialOutilineEntry WidthRequest="300" HeightRequest="50" Padding="10" Placeholder="Test"></local:CustomMaterialOutilineEntry>
         </VerticalStackLayout>
 
         

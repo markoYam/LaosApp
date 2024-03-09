@@ -40,6 +40,7 @@ namespace LaosApp.Controls
             control.Layer.BorderColor = entry.BorderColor.ToCGColor();
             control.Layer.BorderWidth = entry.BorderThickness;
             control.BorderStyle = UITextBorderStyle.Line;
+           
             //control.Padding = entry.Padding;
 
         }
