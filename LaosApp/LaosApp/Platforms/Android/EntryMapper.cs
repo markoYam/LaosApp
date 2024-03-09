@@ -1,15 +1,10 @@
 ﻿using Microsoft.Maui.Handlers;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 using Android.Graphics.Drawables;
-using System.Threading.Tasks;
 using Microsoft.Maui.Platform;
 using Microsoft.Maui.Controls.Compatibility.Platform.Android;
 using LaosApp.Controls;
 
-namespace LaosApp.Platforms.Android
+namespace LaosApp.Controls
 {
     public static class EntryMapper
     {

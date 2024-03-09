@@ -7,7 +7,7 @@ using System.Text;
 using System.Threading.Tasks;
 using UIKit;
 
-namespace LaosApp.Platforms.iOS
+namespace LaosApp.Controls
 {
     public class UITextFieldPadding:UITextField
     {

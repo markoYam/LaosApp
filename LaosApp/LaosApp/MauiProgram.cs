@@ -14,8 +14,7 @@ using LaosApp.Views.RegisterView;
 using LaosApp.Views.ProductosView;
 using LaosApp.Views.OrderView;
 using LaosApp.Controls;
-using LaosApp.Platforms.Android;
-
+using 
 namespace LaosApp
 {
     public static class MauiProgram

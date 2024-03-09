@@ -1,14 +1,9 @@
 ﻿using LaosApp.Controls;
 using Microsoft.Maui.Handlers;
 using Microsoft.Maui.Platform;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using UIKit;
 
-namespace LaosApp.Platforms.iOS
+namespace LaosApp.Controls
 {
     public static class EntryMapper
     {
