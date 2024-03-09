@@ -103,7 +103,7 @@
 
 
             <Label Text="TextFields" FontSize="30" TextColor="Green" HorizontalOptions="Center"/>
-            <md:TextField
+            <!--<md:TextField
                 ActiveIndicatorColor = "{StaticResource ColorLaosRed}"
                 IconData="{Static icon:Material.Search}"
                 Style="{DynamicResource FilledTextFieldStyle}"
@@ -114,7 +114,7 @@
                 Style="{DynamicResource OutlinedTextFieldStyle}"
                 SupportingText="Incorrect password"
                 TrailingIconData="{Static icon:Material.Close}"
-                WidthRequest="300" />
+                WidthRequest="300" />-->
             <Label Text="Buttons redirec to pages" FontSize="30" TextColor="Green" HorizontalOptions="Center"/>
             <md:Button Style="{DynamicResource ElevatedButtonStyle}" Text="Go to Login" BackgroundColor="{StaticResource ColorLaosRed}" x:Name="login" Clicked="login_Clicked"/>
             <md:Button Style="{DynamicResource ElevatedButtonStyle}" Text="Go to Register" BackgroundColor="{StaticResource ColorLaosRed}" x:Name="register" Clicked="register_Clicked"/>
