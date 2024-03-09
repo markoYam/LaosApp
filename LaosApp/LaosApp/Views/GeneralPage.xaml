@@ -42,8 +42,8 @@
 
             <Label Text="Cards" FontSize="30" TextColor="Green" HorizontalOptions="Center"/>
             <md:Card Style="{DynamicResource FilledCardStyle}" Elevation="Level3" Shape="5">
-                
-                
+
+
                 <md:Card.Content>
 
                     <VerticalStackLayout>
@@ -53,13 +53,13 @@
                             <md:Button Style="{DynamicResource TextButtonStyle}" Text="Filled" />
                             <md:Button Style="{DynamicResource TextButtonStyle}" Text="Filled" />
                         </HorizontalStackLayout>
-                       
+
                     </VerticalStackLayout>
-                   
+
                 </md:Card.Content>
             </md:Card>
             <md:Card Style="{DynamicResource ElevatedCardStyle}">
-                
+
                 <md:Card.Content>
                     <VerticalStackLayout>
                         <Label Text="Elevated Card" />
@@ -71,7 +71,7 @@
 
                     </VerticalStackLayout>
                 </md:Card.Content>
-                
+
             </md:Card>
             <md:Card Style="{DynamicResource OutlinedCardStyle}">
                 <md:Card.Content>
@@ -121,10 +121,10 @@
             <md:Button Style="{DynamicResource ElevatedButtonStyle}" Text="Go to Order" BackgroundColor="{StaticResource ColorLaosRed}" x:Name="order" Clicked="order_Clicked"/>
             <md:Button Style="{DynamicResource ElevatedButtonStyle}" Text="Go to Products" BackgroundColor="{StaticResource ColorLaosRed}" x:Name="products" Clicked="products_Clicked"/>
 
-            <local:CustomMaterialOutilineEntry WidthRequest="300" HeightRequest="50" Padding="10" Placeholder="Test"></local:CustomMaterialOutilineEntry>
+            <local:CustomMaterialOutilineEntry CornerRadius="5" BorderThickness="1" BorderColor="Red" WidthRequest="300" HeightRequest="50" Padding="10" Placeholder="Test"></local:CustomMaterialOutilineEntry>
         </VerticalStackLayout>
 
-        
+
     </ScrollView>
-    
+
 </ContentPage>
