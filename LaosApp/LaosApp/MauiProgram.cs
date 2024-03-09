@@ -10,6 +10,9 @@ using Microsoft.Extensions.Options;
 using LaosApp.Services;
 using LaosApp.Presenters;
 using LaosApp.Views;
+using LaosApp.Views.RegisterView;
+using LaosApp.Views.ProductosView;
+using LaosApp.Views.OrderView;
 
 namespace LaosApp
 {
@@ -48,9 +51,18 @@ namespace LaosApp
             builder.Services.AddSingleton<ILoginDataService, LoginDataService>();
             builder.Services.AddSingleton<ILoginPresenter, LoginPresenter>();
             builder.Services.AddSingleton<ILoginView, LoginPage>();
-
-
-
+            //configuracion modulo de Register 
+            builder.Services.AddSingleton<IRegisterDataService, RegisterDataService>();
+            builder.Services.AddSingleton<IRegisterPresenter, RegisterPresenter>();
+            builder.Services.AddSingleton<IRegisterView, RegisterPage>();
+            //configuracion modulo de Products
+            builder.Services.AddSingleton<IProductsDataService, ProductsDataService>();
+            builder.Services.AddSingleton<IProductsPresenter, ProductsPresenter>();
+            builder.Services.AddSingleton<IProductsView, ProductsPage>();
+            //configuracion modulo de Orders
+            builder.Services.AddSingleton<IOrdersDataService, OrderDataService>();
+            builder.Services.AddSingleton<IOrdersPresenter, OrderPresenter>();
+            builder.Services.AddSingleton<IOrdersView, OrderPage>();
 
             return builder.Build();
         }

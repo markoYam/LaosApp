@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace LaosApp.Services
 {
-    internal class ProductsDataService
+    internal class ProductsDataService : IProductsDataService
     {
         private readonly IHttpClientService _httpClientService;
         private readonly DatabaseContextService _databaseContextService;
