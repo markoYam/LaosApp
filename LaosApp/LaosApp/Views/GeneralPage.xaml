@@ -4,6 +4,7 @@
              x:Class="LaosApp.Views.GeneralPage"
              xmlns:md="clr-namespace:Material.Components.Maui;assembly=Material.Components.Maui"
              xmlns:icon="clr-namespace:IconPacks.IconKind;assembly=IconPacks.Material"
+             xmlns:local="clr-namespace:LaosApp.Controls"
              Title="GeneralPage" 
              BackgroundColor="White"
              xmlns:models="clr-namespace:LaosApp.Models">
@@ -119,7 +120,8 @@
             <md:Button Style="{DynamicResource ElevatedButtonStyle}" Text="Go to Register" BackgroundColor="{StaticResource ColorLaosRed}" x:Name="register" Clicked="register_Clicked"/>
             <md:Button Style="{DynamicResource ElevatedButtonStyle}" Text="Go to Order" BackgroundColor="{StaticResource ColorLaosRed}" x:Name="order" Clicked="order_Clicked"/>
             <md:Button Style="{DynamicResource ElevatedButtonStyle}" Text="Go to Products" BackgroundColor="{StaticResource ColorLaosRed}" x:Name="products" Clicked="products_Clicked"/>
-            
+
+            <local:CustomMaterialOutilineEntry Padding="10" Placeholder="Test"></local:CustomMaterialOutilineEntry>
         </VerticalStackLayout>
 
         

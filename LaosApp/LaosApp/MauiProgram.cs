@@ -13,6 +13,8 @@ using LaosApp.Views;
 using LaosApp.Views.RegisterView;
 using LaosApp.Views.ProductosView;
 using LaosApp.Views.OrderView;
+using LaosApp.Controls;
+using LaosApp.Platforms.Android;
 
 namespace LaosApp
 {
@@ -43,6 +45,14 @@ namespace LaosApp
                 });
             builder.Configuration.AddConfiguration(config);
             builder.Services.AddSingleton<IServiceProvider, ServiceProvider>();
+
+            Microsoft.Maui.Handlers.ElementHandler.ElementMapper.AppendToMapping("clasic", (handler, view) =>
+            {
+                if (view is CustomMaterialOutilineEntry)
+                {
+                    EntryMapper.Map(handler, view);
+                }
+            });
 #if DEBUG
             builder.Logging.AddDebug();
 #endif
