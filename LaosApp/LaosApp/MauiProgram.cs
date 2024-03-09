@@ -14,7 +14,7 @@ using LaosApp.Views.RegisterView;
 using LaosApp.Views.ProductosView;
 using LaosApp.Views.OrderView;
 using LaosApp.Controls;
- 
+
 namespace LaosApp
 {
     public static class MauiProgram
@@ -49,7 +49,9 @@ namespace LaosApp
             {
                 if (view is CustomMaterialOutilineEntry)
                 {
+#if ANDROID || IOS
                     EntryMapper.Map(handler, view);
+#endif
                 }
             });
 #if DEBUG
