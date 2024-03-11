@@ -60,8 +60,12 @@
 
 	<ItemGroup>
 	  <None Remove="appsettings.json" />
-	  <None Remove="Resources\Fonts\MaterialIcons-Regular.ttf" />
 	  <None Remove="Resources\Fonts\Sanchez-Regular.ttf" />
+	  <None Remove="Resources\Images\cart.svg" />
+	  <None Remove="Resources\Images\home.svg" />
+	  <None Remove="Resources\Images\orders.svg" />
+	  <None Remove="Resources\Images\profile.svg" />
+	  <None Remove="Resources\Images\settings.svg" />
 	</ItemGroup>
 
 	<ItemGroup>

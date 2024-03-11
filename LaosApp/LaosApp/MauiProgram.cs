@@ -37,7 +37,8 @@ namespace LaosApp
                 {
                     //fonts.AddFont("OpenSans-Regular.ttf", "OpenSansRegular");
                     //fonts.AddFont("OpenSans-Semibold.ttf", "OpenSansSemibold");
-                    fonts.AddFont("Sanchez-Regular.ttf", "Sanchez");
+                   // fonts.AddFont("icomoon.ttf", "icomoon");
+                    //fonts.AddFont("Sanchez-Regular.ttf", "Sanchez");
                     fonts.AddFont("Syne-ExtraBold.ttf", "SyneExtraBold");
                     fonts.AddFont("Syne-Regular.ttf", "SyneRegular");
                     fonts.AddFont("MaterialIcons-Regular.ttf", "MaterialIcons");

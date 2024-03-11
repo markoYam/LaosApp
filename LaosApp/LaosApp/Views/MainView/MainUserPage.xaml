@@ -2,41 +2,46 @@
 <Shell xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
        xmlns:icon="clr-namespace:IconPacks.IconKind;assembly=IconPacks.Material"
-            
-             x:Class="LaosApp.Views.MainView.MainUserPage"
-             >
+            xmlns:productsView="clr-namespace:LaosApp.Views.ProductosView"
+            xmlns:ordersView="clr-namespace:LaosApp.Views.OrderView"
+             x:Class="LaosApp.Views.MainView.MainUserPage" >
+
     <TabBar>
-        <Tab Title="Home">
-            <Tab.Icon>
-                <FontImageSource Glyph="&#xe88a;" FontFamily="MaterialIcons" Color="{StaticResource Primary}" />
-            </Tab.Icon>
+        <Tab Title="Home" Icon="home">
             <ContentPage>
                 <StackLayout>
                     <Label Text="Home" />
                 </StackLayout>
             </ContentPage>
         </Tab>
-        <Tab Title="Cart">
-            <Tab.Icon>
-                <FontImageSource Glyph="&#xe854;" FontFamily="MaterialIcons" Color="{StaticResource Primary}" />
-            </Tab.Icon>
+        <Tab Title="Cart" Icon="cart">
             <ContentPage>
                 <StackLayout>
                     <Label Text="Cart" />
                 </StackLayout>
             </ContentPage>
         </Tab>
-        <Tab Title="Profile">
-            <Tab.Icon>
-                <FontImageSource Glyph="&#xe853;" FontFamily="MaterialIcons" Color="{StaticResource Primary}" />
-            </Tab.Icon>
-            <ContentPage>
-                <StackLayout>
-                    <Label Text="Profile" />
-                </StackLayout>
-            </ContentPage>
+        <!--Orders-->
+        <Tab Title="Orders" Icon="orders">
+            <Shell.TitleView>
+                <Label Text="Orders" />
+            </Shell.TitleView>
+            <ShellContent Route="OrdersPage" ContentTemplate="{DataTemplate ordersView:OrderPage}"/>
         </Tab>
-      
+        <Tab Title="Profile" Icon="profile">
+           
+            <ShellContent Route="ProductsPage" ContentTemplate="{DataTemplate productsView:ProductsPage}"/>
+        </Tab>
+
     </TabBar>
+    <Shell.TitleView>
+        <ContentView>
+            <StackLayout HorizontalOptions="FillAndExpand" Orientation="Horizontal">
+                <Label Text="Marco Yam Cetina"  Style="{StaticResource Title1Regular}" FontSize="25" HorizontalOptions="StartAndExpand" Margin="0,10,0,0"/>
+                <!--Icon cart-->
+                <ImageButton Source="cart" HorizontalOptions="End" BackgroundColor="Transparent" WidthRequest="30" HeightRequest="30" Margin="0,10,10,0"/>
+            </StackLayout>
+        </ContentView>
+    </Shell.TitleView>
 
 </Shell>
