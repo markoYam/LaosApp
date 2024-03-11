@@ -11,22 +11,18 @@
 
 
     <ScrollView>
-        <VerticalStackLayout Spacing="5">
-            <Label Text="Fonts" FontSize="30" TextColor="Green" HorizontalOptions="Center"/>
-            <Label 
-                Text="Syne ExtraBoald"
-                VerticalOptions="Center" 
-                HorizontalOptions="Center" 
-                FontFamily="SyneExtra" 
-                FontSize="25" 
-                TextColor="Black"/>
-            <Label 
-                Text="Sanchez"
-                VerticalOptions="Center" 
-                HorizontalOptions="Center" 
-                FontFamily="Sanchez" 
-                TextColor="{StaticResource ColorLaosRed}" 
-        FontSize="20"/>
+        <VerticalStackLayout Spacing="10">
+            
+            <!--Label with Style-->
+            <Label Text="Title1ExtraBold" Style="{DynamicResource Title1ExtraBold}" />
+            <Label Text="Title2ExtraBold" Style="{DynamicResource Title2ExtraBold}" />
+            <Label Text="Title3ExtraBold" Style="{DynamicResource Title3ExtraBold}" />
+            <Label Text="Title1Regular" Style="{DynamicResource Title1Regular}" />
+            <Label Text="Title1Italic" Style="{DynamicResource Title1Italic}" />
+
+
+
+
             <Label Text="Buttons" FontSize="30" TextColor="Green" HorizontalOptions="Center"/>
             <md:Button Style="{DynamicResource ElevatedButtonStyle}" Text="Elevated" BackgroundColor="{StaticResource ColorLaosRed}"/>
             <md:Button Style="{DynamicResource FilledButtonStyle}" Text="Filled" />
@@ -41,7 +37,7 @@
             <md:IconButton IconData="{Static icon:Material.Star}" Style="{DynamicResource StandardIconButtonStyle}" />
 
             <Label Text="Cards" FontSize="30" TextColor="Green" HorizontalOptions="Center"/>
-            <md:Card Style="{DynamicResource FilledCardStyle}" Elevation="Level3" Shape="5">
+            <md:Card WidthRequest="200" Style="{DynamicResource FilledCardStyle}" Elevation="Level4" Shape="5">
 
 
                 <md:Card.Content>
@@ -58,7 +54,7 @@
 
                 </md:Card.Content>
             </md:Card>
-            <md:Card Style="{DynamicResource ElevatedCardStyle}">
+            <md:Card WidthRequest="200" Style="{DynamicResource ElevatedCardStyle}" Elevation="Level4">
 
                 <md:Card.Content>
                     <VerticalStackLayout>
@@ -73,7 +69,7 @@
                 </md:Card.Content>
 
             </md:Card>
-            <md:Card Style="{DynamicResource OutlinedCardStyle}">
+            <md:Card WidthRequest="200" Style="{DynamicResource OutlinedCardStyle}" Elevation="Level1">
                 <md:Card.Content>
                     <VerticalStackLayout>
                         <Label Text="Outlined Card" />
