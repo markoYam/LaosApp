@@ -14,11 +14,11 @@
         <VerticalStackLayout Spacing="10">
             
             <!--Label with Style-->
-            <Label Text="Title1ExtraBold" Style="{DynamicResource Title1ExtraBold}" />
-            <Label Text="Title2ExtraBold" Style="{DynamicResource Title2ExtraBold}" />
-            <Label Text="Title3ExtraBold" Style="{DynamicResource Title3ExtraBold}" />
-            <Label Text="Title1Regular" Style="{DynamicResource Title1Regular}" />
-            <Label Text="Title1Italic" Style="{DynamicResource Title1Italic}" />
+            <Label Text="Titulo 1" Style="{DynamicResource Title1ExtraBold}" />
+            <Label Text="Titulo 2" Style="{DynamicResource Title2ExtraBold}" />
+            <Label Text="Titulo 3" Style="{DynamicResource Title3ExtraBold}" />
+            <Label Text="Cuerpo de texto" Style="{DynamicResource Title1Regular}" />
+            <Label Text="Menús" Style="{DynamicResource Title1SanchesMedium}" />
 
 
 

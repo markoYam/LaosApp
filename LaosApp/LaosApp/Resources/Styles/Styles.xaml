@@ -425,28 +425,28 @@
     <!--Text Styles-->
     <Style x:Key="Title1ExtraBold" TargetType="Label">
         <Setter Property="TextColor" Value="{AppThemeBinding Light={StaticResource Gray900}, Dark={StaticResource White}}" />
-        <Setter Property="FontFamily" Value="Syne-ExtraBold"/>
-        <Setter Property="FontSize" Value="Title"/>
+        <Setter Property="FontFamily" Value="SyneExtraBold"/>
+        <Setter Property="FontSize" Value="Large"/>
     </Style>
     <Style x:Key="Title2ExtraBold" TargetType="Label">
         <Setter Property="TextColor" Value="{AppThemeBinding Light={StaticResource Gray900}, Dark={StaticResource White}}" />
-        <Setter Property="FontFamily" Value="Syne-ExtraBold"/>
+        <Setter Property="FontFamily" Value="SyneExtraBold"/>
         <Setter Property="FontSize" Value="Medium"/>
     </Style>
 
     <Style x:Key="Title3ExtraBold" TargetType="Label">
         <Setter Property="TextColor" Value="{AppThemeBinding Light={StaticResource Gray900}, Dark={StaticResource White}}" />
-        <Setter Property="FontFamily" Value="Syne-ExtraBold"/>
+        <Setter Property="FontFamily" Value="SyneExtraBold"/>
         <Setter Property="FontSize" Value="Small"/>
     </Style>
 
     <Style x:Key="Title1Regular" TargetType="Label">
         <Setter Property="TextColor" Value="{AppThemeBinding Light={StaticResource Gray900}, Dark={StaticResource White}}" />
-        <Setter Property="FontFamily" Value="Sanchez-Regular"/>
+        <Setter Property="FontFamily" Value="SyneRegular"/>
         <Setter Property="FontSize" Value="Medium"/>
     </Style>
 
-    <Style x:Key="Title1Italic" TargetType="Label">
+    <Style x:Key="Title1SanchesMedium" TargetType="Label">
         <Setter Property="TextColor" Value="{AppThemeBinding Light={StaticResource Gray900}, Dark={StaticResource White}}" />
         <Setter Property="FontFamily" Value="Sanchez"/>
         <Setter Property="FontSize" Value="Medium"/>
