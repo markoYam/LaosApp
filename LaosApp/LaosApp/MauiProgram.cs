@@ -35,12 +35,12 @@ namespace LaosApp
                 .AddServices()
                 .ConfigureFonts(fonts =>
                 {
-                    fonts.AddFont("OpenSans-Regular.ttf", "OpenSansRegular");
-                    fonts.AddFont("OpenSans-Semibold.ttf", "OpenSansSemibold");
+                    //fonts.AddFont("OpenSans-Regular.ttf", "OpenSansRegular");
+                    //fonts.AddFont("OpenSans-Semibold.ttf", "OpenSansSemibold");
                     fonts.AddFont("Sanchez-Regular.ttf", "Sanchez");
                     fonts.AddFont("Syne-ExtraBold.ttf", "SyneExtraBold");
                     fonts.AddFont("Syne-Regular.ttf", "SyneRegular");
-                    fonts.AddFont("MaterialIcons-Regular.ttf", "Icons");
+                    fonts.AddFont("MaterialIcons-Regular.ttf", "MaterialIcons");
 
                 });
             builder.Configuration.AddConfiguration(config);

@@ -1,4 +1,7 @@
-﻿namespace LaosApp
+﻿
+using LaosApp.Views.MainView;
+
+namespace LaosApp
 {
     public partial class App : Application
     {
@@ -6,7 +9,7 @@
         {
             InitializeComponent();
 
-            MainPage = new AppShell();
+            MainPage = new MainUserPage();
         }
     }
 }

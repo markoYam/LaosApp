@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Shell xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+       xmlns:icon="clr-namespace:IconPacks.IconKind;assembly=IconPacks.Material"
+            
+             x:Class="LaosApp.Views.MainView.MainUserPage"
+             >
+    <TabBar>
+        <Tab Title="Home">
+            <Tab.Icon>
+                <FontImageSource Glyph="&#xe88a;" FontFamily="MaterialIcons" Color="{StaticResource Primary}" />
+            </Tab.Icon>
+            <ContentPage>
+                <StackLayout>
+                    <Label Text="Home" />
+                </StackLayout>
+            </ContentPage>
+        </Tab>
+        <Tab Title="Cart">
+            <Tab.Icon>
+                <FontImageSource Glyph="&#xe854;" FontFamily="MaterialIcons" Color="{StaticResource Primary}" />
+            </Tab.Icon>
+            <ContentPage>
+                <StackLayout>
+                    <Label Text="Cart" />
+                </StackLayout>
+            </ContentPage>
+        </Tab>
+        <Tab Title="Profile">
+            <Tab.Icon>
+                <FontImageSource Glyph="&#xe853;" FontFamily="MaterialIcons" Color="{StaticResource Primary}" />
+            </Tab.Icon>
+            <ContentPage>
+                <StackLayout>
+                    <Label Text="Profile" />
+                </StackLayout>
+            </ContentPage>
+        </Tab>
+      
+    </TabBar>
+
+</Shell>
