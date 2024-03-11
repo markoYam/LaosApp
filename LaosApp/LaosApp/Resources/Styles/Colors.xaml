@@ -17,7 +17,7 @@
     <Color x:Key="TertiaryLight">#DFDFDF</Color>
 
     <!--Los Colors-->
-    <Color x:Key="ColorLaos1">#C32228</Color>
+    <Color x:Key="ColorLaosRed">#C32228</Color>
     <Color x:Key="ColorLaos2">#000000</Color>
     <Color x:Key="ColorLaos3">#4D4D4D</Color>
     <Color x:Key="ColorLaos4">#DFDFDF</Color>

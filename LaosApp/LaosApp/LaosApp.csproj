@@ -40,7 +40,7 @@
 
 	<ItemGroup>
 		<!-- App Icon -->
-		<MauiIcon Include="Resources\AppIcon\laos_logo_rojo.svg" ForegroundFile="Resources\AppIcon\appiconfg.svg" Color="#fff" />
+		<MauiIcon Include="Resources\AppIcon\appicon.svg" ForegroundFile="Resources\AppIcon\appiconfg.svg" Color="#fff" />
 
 		<!-- Splash Screen -->
 		<MauiSplashScreen Include="Resources\Splash\laos_logo_rojo.svg" Color="#fff" BaseSize="128,128">
