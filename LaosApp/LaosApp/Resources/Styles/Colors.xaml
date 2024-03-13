@@ -6,15 +6,46 @@
 
     <!-- Note: For Android please see also Platforms\Android\Resources\values\colors.xml -->
 
-    <Color x:Key="Primary">#512BD4</Color>
-    <Color x:Key="PrimaryDark">#ac99ea</Color>
-    <Color x:Key="PrimaryDarkText">#242424</Color>
-    <Color x:Key="Secondary">#DFD8F7</Color>
-    <Color x:Key="SecondaryDarkText">#9880e5</Color>
-    <Color x:Key="Tertiary">#2B0B98</Color>
-    <!-- Colors edit-->
+    <Color x:Key="Primary">#C32228</Color>
+    <Color x:Key="PrimaryDark">#4D4D4D</Color>
+    <Color x:Key="PrimaryLight">#DFDFDF</Color>
+    <Color x:Key="Secondary">#000000</Color>
+    <Color x:Key="SecondaryDark">#4D4D4D</Color>
+    <Color x:Key="SecondaryLight">#DFDFDF</Color>
+    <Color x:Key="Tertiary">#4D4D4D</Color>
+    <Color x:Key="TertiaryDark">#4D4D4D</Color>
+    <Color x:Key="TertiaryLight">#DFDFDF</Color>
+
+    <!--Los Colors-->
     <Color x:Key="ColorLaosRed">#C32228</Color>
-    <!-- Colors edit-->
+    <Color x:Key="ColorLaos2">#000000</Color>
+    <Color x:Key="ColorLaos3">#4D4D4D</Color>
+    <Color x:Key="ColorLaos4">#DFDFDF</Color>
+
+    <!--Background color-->
+    <Color x:Key="BackgroundColorPrimary">#FFFFFF</Color>
+    <Color x:Key="BackgroundColorSecondary">#F2F2F2</Color>
+    <!--Navigation Color-->
+    <Color x:Key="NavigationColor">#C32228</Color>
+    <Color x:Key="NavigationColorDark">#4D4D4D</Color>
+    <!--Button Color-->
+    <Color x:Key="ButtonColor">#C32228</Color>
+    <Color x:Key="ButtonColorDark">#4D4D4D</Color>
+    <!--Card Color-->
+    <Color x:Key="CardColor">#FFFFFF</Color>
+    <Color x:Key="CardColorDark">#4D4D4D</Color>
+    <!--Divider Color-->
+    <Color x:Key="DividerColor">#E0E0E0</Color>
+    <Color x:Key="DividerColorDark">#4D4D4D</Color>
+    <!--Icon Color-->
+    <Color x:Key="IconColor">#000000</Color>
+    <Color x:Key="IconColorDark">#4D4D4D</Color>
+    <!--Text Color-->
+    <Color x:Key="TextColor">#000000</Color>
+    <Color x:Key="TextColorDark">#4D4D4D</Color>
+    <!--Text Color Secondary-->
+    <Color x:Key="TextColorSecondary">#4D4D4D</Color>
+    <Color x:Key="TextColorSecondaryDark">#4D4D4D</Color>
 
     <Color x:Key="White">White</Color>
     <Color x:Key="Black">Black</Color>

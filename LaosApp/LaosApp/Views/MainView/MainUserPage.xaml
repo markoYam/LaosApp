@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Shell xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+            xmlns:icon="clr-namespace:IconPacks.IconKind;assembly=IconPacks.Material"
+            xmlns:md="clr-namespace:Material.Components.Maui;assembly=Material.Components.Maui"
+            xmlns:productsView="clr-namespace:LaosApp.Views.ProductosView"
+            xmlns:ordersView="clr-namespace:LaosApp.Views.OrderView"
+         x:Class="LaosApp.Views.MainView.MainUserPage" >
+
+    <TabBar>
+        <Tab Title="Home" Icon="home">
+            <ContentPage>
+                <StackLayout>
+                    <Label Text="Home" />
+                </StackLayout>
+            </ContentPage>
+        </Tab>
+        <Tab Title="Cart" Icon="cart">
+            <ContentPage>
+                <StackLayout>
+                    <Label Text="Cart" />
+                </StackLayout>
+            </ContentPage>
+        </Tab>
+        <!--Orders-->
+        <Tab Title="Orders" Icon="orders">
+            <Shell.TitleView>
+                <Label Text="Orders" />
+            </Shell.TitleView>
+            <ShellContent Route="OrdersPage" ContentTemplate="{DataTemplate ordersView:OrderPage}"/>
+        </Tab>
+        <Tab Title="Profile" Icon="profile">
+           
+            <ShellContent Route="ProductsPage" ContentTemplate="{DataTemplate productsView:ProductsPage}"/>
+        </Tab>
+
+    </TabBar>
+    <Shell.TitleView>
+        <ContentView>
+            <StackLayout HorizontalOptions="FillAndExpand" Orientation="Horizontal">
+                <Label Text="Marco Yam Cetina"  Style="{StaticResource Title1Regular}" FontSize="25" HorizontalOptions="StartAndExpand" Margin="0,10,0,0"/>
+                <md:IconButton WidthRequest="50" HeightRequest="50" Margin="0,0,10,0" IconData="{Static icon:Material.AddShoppingCart}" Style="{DynamicResource StandardIconButtonStyle}" />
+            </StackLayout>
+        </ContentView>
+    </Shell.TitleView>
+
+</Shell>
